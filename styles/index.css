@@ -1,0 +1,11 @@
+body {
+    padding: 0;
+     margin: 0;
+    font-family: arial,sans-serif;
+    background-color: black;
+}
+
+h1, h2, h3, p { 
+    color: white;
+    text-align: center;
+}

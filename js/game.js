@@ -106,7 +106,6 @@ function reset() {
 
 /** Call score() once, check if HURWin or AIRWin is === 3. If neither is true, play the game until they do become === 3 */
 function game() {
-    document.getElementById("wipeOnStart").innerHTML = "<h1>Just follow the instructions on screen!</h1>\n<h2>Remember, best of 5 (first to three) wins the game!</h2>";
     score();
     if (HURWin === 3) {
         document.getElementById("currentGameState").innerHTML = "Congratulations! You won the game! Type reset() to reset the page back to its original state and start again!.";

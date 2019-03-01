@@ -14,12 +14,15 @@
 </head>
 
 <body>
-    <h1>Welcome to this simple game of Rock, Paper, Scissors!</h1>
-    <h2>To start playing, go to your developer console in your browser (usually F12 will open it), go to the console
-        window,
-        type in game() and hit enter!</h2>
-    <h3>Best of 5 wins the game. Good luck!</h3>
-    <p id="progressBad" style="color: red;"></p>
-    <p id="progressGood" style="color: green;"></p>
     <script src="js/game.js"></script>
+    <div id="wipeOnStart">
+        <h1>Welcome to this simple game of Rock, Paper, Scissors!</h1>
+        <h2>To start playing, go to your developer console in your browser (if you're not sure how, <a href="https://goo.gl/zz7L8v">try this</a>), go to the
+            console window, type in game() and hit enter!</h2>
+        <h2>Alternatively, you can <a href="guiversion.html">click here</a> and play a graphical version!</h2>
+        <h3>Best of 5 wins the game. Good luck!</h3>
+    </div>
+    <div class="gameProgress">
+        <p id="currentGameState" style="font-size: 20px;"></p>
+    </div>
 </body>

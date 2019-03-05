@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>RPS GUI | Luka S.</title>
+    <meta name="author" content="Luka S.">
+    <meta name="description" content="A small game of rock paper scissors played against the user's computer.">
+    <!-- https://necolas.github.io/normalize.css/ -->
+    <link rel="stylesheet" href="styles/normalize.css" type="text/css">
+    <!-- First link will normalize the CSS, the 2nd will overwrite whatever changes were made in favour of the specfied ones -->
+    <link rel="stylesheet" href="styles/guiversion.css" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.png" />
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto');
+    </style>
+</head>
+
+<body>
+    <div id="bodyWrapper">
+        <div id="wipeAndReplace">
+            <h1>Welcome to this simple game of Rock, Paper, Scissors!</h1>
+            <h2>To play, simply click on any of the buttons below, where your choice will be pitted against your
+                computer's.
+                Don't worry, the computer doesn't know what you'll pick!</h2>
+            <h3>Best of 5, which means first to 3, wins the game.</h3>
+            <h3>Good luck!</h3>
+        </div>
+        <div id="gameButtons">
+            <input type="image" id="rockButton" src="images/rock.png" alt="Rock" class="playButtons">
+            <input type="image" id="paperButton" src="images/paper.png" alt="Paper" class="playButtons">
+            <input type="image" id="scissorsButton" src="images/scissors.png" alt="Scissors" class="playButtons">
+        </div>
+
+    </div>
+    <script src="js/guigame.js"></script>
+</body>

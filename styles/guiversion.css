@@ -1,0 +1,44 @@
+/* #E28413 background color of the images when hovered or try #E59500*/
+body {
+    background-color: #2E294E;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, p {
+    color: #C0BECA;
+}
+
+#bodyWrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#wipeAndReplace {
+    order: 1;
+    padding: 15px 5px 15px 5px;
+    margin: 10px 5px 10px 5px;
+    min-height: 300px;
+}
+
+#gameButtons {
+    order: 2;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 50px 0 50px 0;
+    margin: 5px;
+}
+
+.playButtons {
+    padding: 20px;
+    margin: 5px;
+    outline: none;
+}
+
+.playButtons:hover {
+    background-color: #413C5E;
+    transform:scale(1.3,1.3);
+    -webkit-transform:scale(1.3,1.3);
+    -moz-transform:scale(1.3,1.3);
+}

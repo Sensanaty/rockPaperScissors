@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 /**
  * @AIRWin AI Round Win
  * @HURWin Human Round Win

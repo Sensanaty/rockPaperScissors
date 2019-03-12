@@ -3,10 +3,14 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
     color: #C0BECA;
 }
 
+/* Flex container for entire body */
 #bodyWrapper {
     display: flex;
     flex-direction: column;
@@ -19,6 +23,34 @@ h1, h2, h3, p {
     margin: 10px 5px 10px 5px;
     min-height: 300px;
 }
+
+/* Flex container for the scoreboard section */
+#scoreboard {
+    display: none;
+    order: 1;
+    padding: 5px;
+    margin: 5px;
+    min-height: 300px;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-items: stretch;
+}
+
+#scoreboardTitle,
+#scoreboardResult {
+    flex: 1 100%;
+}
+
+#scoreboardLeft,
+#scoreboardRight {
+    flex: 1;
+}
+
+#scoreboardScore {
+    flex: 2;
+    font-size: 2em;
+}
+
 
 #gameButtons {
     order: 2;
@@ -37,7 +69,7 @@ h1, h2, h3, p {
     border: none;
 }
 
-#paperButton{
+#paperButton {
     background: url(../images/paper.png);
     background-repeat: no-repeat;
     height: 200px;
@@ -45,7 +77,7 @@ h1, h2, h3, p {
     border: none;
 }
 
-#scissorsButton{
+#scissorsButton {
     background: url(../images/scissors.png);
     background-repeat: no-repeat;
     height: 200px;
@@ -65,9 +97,15 @@ h1, h2, h3, p {
     outline: none;
 }
 
+#resetButton {
+    order: 3;
+    padding: 15px;
+    margin: 15px;
+}
+
 .playButtons:hover {
     background-color: #413C5E;
-    transform:scale(1.3,1.3);
-    -webkit-transform:scale(1.3,1.3);
-    -moz-transform:scale(1.3,1.3);
+    transform: scale(1.3, 1.3);
+    -webkit-transform: scale(1.3, 1.3);
+    -moz-transform: scale(1.3, 1.3);
 }

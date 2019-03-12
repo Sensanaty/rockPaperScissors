@@ -18,6 +18,7 @@
 
 <body>
     <div id="bodyWrapper">
+        <!-- becomes hidden on button press -->
         <div id="wipeAndReplace">
             <h1>Welcome to this simple game of Rock, Paper, Scissors!</h1>
             <h2>To play, simply click on any of the buttons below, where your choice will be pitted against your
@@ -26,12 +27,24 @@
             <h3>Best of 5, which means first to 3, wins the game.</h3>
             <h3>Good luck!</h3>
         </div>
+        <!-- scoreboard is hidden until button press -->
+        <div id="scoreboard">
+            <h1 class="flexitem" id="scoreboardTitle">Scoreboard</h1>
+            <h2 class="flexitem" id="scoreboardLeft">You : </h2>
+            <h2 class="flexitem" id="scoreboardScore"></h2>
+            <h2 class="flexitem" id="scoreboardRight"> : Enemy</h2>
+            <h2 class="flexitem" id="scoreboardResult"></h2>
+        </div>
+        <!-- stay in place -->
         <div id="gameButtons">
             <button id="rockButton" class="playButtons"></button>
             <button id="paperButton" class="playButtons"></button>
             <button id="scissorsButton" class="playButtons"></button>
         </div>
-
+        <!-- display after button click -->
+        <div id="resetButton">
+            <button onclick="reset()">Start over?</button>
+        </div>
     </div>
     <script src="js/guigame.js"></script>
 </body>
